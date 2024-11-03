@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/80d4101852.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenue">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full-Stack Web Developer</p>
+            <!-- <p>Java and Python Developer</p> -->
+            <h1>Hi I'm <span>Ranjeet </span><br> Kumar Mahto From India</h1>
+        </div>
+        <!-- --------------Resume ----------------- -->
+        <a href="Ranjeet_resume.pdf" class="btn btn2">Download CV</a>
+        
+        <!-- --------------- end resume --------------- -->
+    </div>
+</div>
+
+
+
+<!-- -----about ME------ -->
+ <div id="about">
+    <div class="container">
+        <div class="rwo">
+            <div class="about-col-1">
+                <img src="user.jpg">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>   
+                <p>Seeking a position to utilize my strong analytical and communication abilities, effectively prioritize tasks, and
+                    collaborate seamlessly. Dedicated to implementing practical solutions, enhancing processes, and contributing
+                    to global client initiatives.</p>
+                
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Certfication')">Certfication</p>
+                        
+                     </div>
+
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            <li><span>Frontend Web Development</span><br>HTML <br>CSS <br>Javascript <br>ReactJs</li>
+                            <li><span>Programing Language</span><br>Java <br>Python</li>
+                          
+                        </ul>
+                     </div>
+
+
+                     <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2023- 2 Months Internship</span><br>Full Stack Web Development</li> 
+                        </ul>
+                     </div>
+
+
+                     <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2021-2024</span><br>B.Tech From <br>Ramgarh Engineering College<br>Branch:-Computer Science and Engineering <br>CGPA-7.4</li>
+                            <li><span>2019-2021</span><br>Diploma From <br> Government Polytechnic Lateharbr <br>Branch:- Civil Enginnering <br>CGPA 7.9 </li>
+                            <li><span>2016-2018</span><br> Intermediat From <br>St. John's Inter College, Ranchi <br>Stream:- PCM </li>
+                            <li><span>2015-2016</span><br> Matriculation From Saraswati Shishu Vidya Mandir, Ranchi </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="Certfication">
+                        <ul>
+                            <li><span>Full Stack Web Development</span> <br>Python with frontend designing (HTML/CSS/Java Script).</li>
+                            <li><span>Google IT Automation with Python</span> <br>Python scripts for automating
+                                tasks, managing IT resources, and <br>  analyzing real-world problems using Git and GitHub.</li>
+                            <li><span>Ethical Hacking </span></li>
+                            <li><span>Basic Web Designing</span></li>
+
+                        </ul>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+<!-- -----END about ME ------ -->
+
+
+
+
+<!--------------SERVICES------------->
+<div id="services">
+    <div class="container">
+
+        <h1 class="sub-title">My Services</h1> 
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt dolore repudiandae, rem ex eligendi? Repellendus mollitia repellat animi exercitationem ea distinctio, repudiandae ad, totam dolor, nostrum facere ab voluptatum?</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt dolore repudiandae, rem ex eligendi? Repellendus mollitia repellat animi exercitationem ea distinctio, repudiandae ad, totam dolor, nostrum facere ab voluptatum?</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt dolore repudiandae, rem ex eligendi? Repellendus mollitia repellat animi exercitationem ea distinctio, repudiandae ad, totam dolor, nostrum facere ab voluptatum?</p>
+                <a href="#">Learn More</a>
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------- end SERVICES------------->
+
+
+
+
+<!-------------- work portfolio------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="Music.jpg" alt="">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p> The app connects you to the talented people around the world
+                        it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="social media .jpg" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p> The app connects you to the talented people around the world
+                        it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Online shopping .jpg" alt="">
+                <div class="layer">
+                    <h3>Online Shopping Website</h3>
+                    <p> The app connects you to the talented people around the world
+                        it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work_Vmail.png" alt="">
+                <div class="layer">
+                    <h3>Vmail Web App</h3>
+                    <p>Objectives and requirements :- a voice-based email system for blind
+                        people,the primary goal is likely to create an accessible interface for sending and receiving emails using voice
+                        commands. </p>
+
+                </div>
+
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------------- end work portfolio------------->
+
+
+
+
+
+<!-------------- Contact------------->
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>ranjeetkm08@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+918709303341</p>
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/ranjee029"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <!-- --------------Resume ----------------- -->
+                <a href="Ranjeet_resume.pdf" class="btn btn2">Download CV</a>
+                <!-- --------------- end resume --------------- -->
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+   
+    
+</div>
+<div class="copyright">
+    <p>Copyright &copy; Ranjeet. Made with <i class="fa-solid fa-heart"></i> by Jeet </p>
+</div>
+
+<!--------------End  Contact------------->
+
+
+
+
+<!-- -------------------------Javascript about me-------------------------- -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<!-- -------------------------end Javascript about me ------------------>
+
+<!-------------------side menu ------------------>
+<script>
+    var sidemeu = document.getElementById("sidemenue");
+    
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+        
+    }
+
+</script>
+<!-- contact form -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzE6kGUnFG0RM-EaZFq4igi9XT7y8-fWrpxSSmIvhkvaCsoHNVkcEXqpNYQr2T8MNEY/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = 'Message sent successfully!'
+            setTimeout(function(){
+                msg.innerHTML = ''
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
+
